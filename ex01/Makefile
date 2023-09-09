@@ -4,7 +4,7 @@ SRC = Contact.cpp PhoneBook.cpp main.cpp
 
 HEADRS = Contact.hpp PhoneBook.hpp
 
-FLAGS = -Wall -Wextra -Werror 
+FLAGS = -Wall -Wextra -Werror -std=c++98
 
 all: $(NAME)
 

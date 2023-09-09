@@ -10,7 +10,7 @@ void Contact ::init_contact(int i)
 }
 void Contact ::Set_Index(int i)
 {
-	index = i;
+	this->index = i;
 }
 int Contact :: Set_First_Name()
 {
@@ -35,7 +35,7 @@ int Contact :: Set_First_Name()
 		}
 		if (first_name.size() >= 10)
 		{
-			first_name.replace(10, first_name.length() - 10, ".");
+			first_name.replace(9, first_name.length() - 9, ".");
 		}
 		return(1);
 }
@@ -63,7 +63,7 @@ int Contact ::Set_Last_Name()
 	}
 	if (last_name.size() >= 10)
 	{
-		last_name.replace(10, last_name.length() - 10, ".");
+		last_name.replace(9, last_name.length() - 9, ".");
 	}
 	return(1);
 }
@@ -112,7 +112,7 @@ int Contact ::Set_Number_Phone()
 	}
 	if (phone_number.size() >= 10)
 	{
-		phone_number.replace(10, phone_number.length() - 10, ".");
+		phone_number.replace(9, phone_number.length() - 9, ".");
 	}
 	return(1);
 }
@@ -140,7 +140,7 @@ int Contact ::Set_Nick_Name()
 	}
 	if (nick_name.size() >= 10)
 	{
-		nick_name.replace(10, nick_name.length() - 10, ".");
+		nick_name.replace(9, nick_name.length() - 9, ".");
 	}
 	return(1);
 }
@@ -168,26 +168,26 @@ int Contact ::Set_Darkest_secret()
 	}
 	if (darkest_secret.size() >= 10)
 	{
-		darkest_secret.replace(10, darkest_secret.length() - 10, ".");
+		darkest_secret.replace(9, darkest_secret.length() - 9, ".");
 	}
 	return(1);
 }
 
 std ::string Contact ::Get_First_Name()
 {
-	return (first_name);
+	return (this->first_name);
 }
 
 std ::string Contact ::Get_Last_Name()
 {
-	return (last_name);
+	return (this->last_name);
 }
 
 std ::string Contact ::Get_Nick_Name()
 {
-	return (nick_name);
+	return (this->nick_name);
 }
 int Contact ::Get_Index()
 {
-	return (index);
+	return (this->index);
 }

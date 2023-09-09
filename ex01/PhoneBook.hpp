@@ -8,8 +8,9 @@
 
 class PhoneBook
 {
-    public :
+    private :
         Contact contacts[8];
+    public :
         void Set_Contact();
         int Add_Contact(int i);
         void Display();
