@@ -17,13 +17,13 @@ int main(int argc, char **argv)
 				int j = 0;
 				while(argv[i][j] != '\0')
 				{
-					if(isprint(argv[i][j]))
+					if(std :: isprint(argv[i][j]))
 					{
-						if(islower(argv[i][j]))
+						if(std :: islower(argv[i][j]))
 						{
 							char c;
 
-							c = (char)argv[i][j] - 32;
+							c = std :: toupper(argv[i][j]);
 							std :: cout << c;
 						}
 						else
